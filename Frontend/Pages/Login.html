@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+</head>
+<body>
+<h2>Registration Form</h2>
+  <form id="registrationForm" action="/touristregistration" method="POST" onsubmit="submitForm(event)">
+
+
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name" required><br><br>
+  
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" required><br><br>
+  
+  <label for="password">Password:</label><br>
+  <input type="password" id="password" name="password" required><br><br>
+  
+  <label for="phone">Phone Number:</label><br>
+  <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br><br>
+  
+  <input type="submit" value="Submit">
+</form>
+
+
+<script>
+    function submitForm(event) {
+  event.preventDefault(); // Prevent the form from submitting normally
+
+  const formData = new FormData(document.getElementById('registrationForm'));
+  const data = {};
+  formData.forEach((value, key) => {
+    data[key] = value;
+  });
+
+  // Send the form data to your backend server using AJAX
+  fetch('/submit', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(data),
+  })
+  .then(response => response.json())
+  .then(result => {
+    console.log('Success:', result);
+    // Handle the success response here
+  })
+  .catch(error => {
+    console.error('Error:', error);
+    // Handle any errors here
+  });
+}
+
+</script>
+</body>
+</html>
