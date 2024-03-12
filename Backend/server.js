@@ -1,63 +1,66 @@
-const express = require('express');
+import express from 'express';
+import mysql from 'mysql2';
+import dotenv from 'dotenv';
+dotenv.config();
+
 const app = express();
+const port = 3003;
 
-const mysql = require('mysql');
-const connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'traveling_guide_web'
-});
-
-// Connect to the database
-connection.connect((err) => {
-    if (err) {
-        console.error('Error connecting to MySQL: ' + err.stack);
-        return;
-    }
-    console.log('Connected to MySQL as ID ' + connection.threadId);
-});
-
-// Middleware to parse JSON bodies
+// Middleware for parsing JSON
 app.use(express.json());
 
-app.get('/destinations', (req, res) => {
-    connection.query('SELECT * FROM destinations', (err, results) => {
-        if (err) {
-            console.error('Error retrieving destinations: ' + err.stack);
-            res.status(500).json({ error: 'Error retrieving destinations' });
-            return;
+const pool = mysql.createPool({
+    host: process.env.MYSQL_HOST,
+    user: process.env.MYSQL_USER,
+    password: process.env.MYSQL_PASSWORD,
+    database: process.env.DATABASE,
+}).promise();
+
+app.get('/table', async (req, res) => {
+    try {
+        const [rows] = await pool.query("SELECT * FROM tourist");
+        console.log(rows); // Log the rows to the terminal
+        res.json(rows);
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: "Internal Server Error" });
+    }
+});
+
+app.get('/details/:id', async (req, res) => {
+    const id = req.params.id;
+    try {
+        const [rows] = await pool.query("SELECT * FROM tourist WHERE id = ?", [id]);
+        res.json(rows[0]);
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: "Internal Server Error" });
+    }
+});
+
+app.post('/tourist', async (req, res) => {
+    console.log(req.body); // Log the request body
+    const { id, Nmae, Email, Password, PhoneNo } = req.body;
+    try {
+        if (!id || !Nmae || !Email || !Password || !PhoneNo) {
+            throw new Error("Missing required fields");
         }
-        res.json(results);
-    });
+        const result = await pool.query("INSERT INTO tourist (id, Nmae, Email, Password, PhoneNo) VALUES (?, ?, ?, ?, ?)", [id, Nmae, Email, Password, PhoneNo]);
+        res.json({ message: "Tourist created successfully" });
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: "Internal Server Error" });
+    }
+<<<<<<< Updated upstream
+});refefefre
+
+app.listen(port, () => {
+    console.log(`Server running at http://localhost:${port}`);
+});//adding comment
+=======
 });
 
-
-app.use(express.urlencoded({ extended: true }));
-
-app.post('/touristregistration', (req, res) => {
-    // Extract the data from the request body
-    const { name, email, password, phone } = req.body;
-    // Insert the data into the database
-    const sql = 'INSERT INTO `tourist registration` (Name, Email, Password, PhoneNo) VALUES (?, ?, ?, ?)';
-    db.query(sql, [name, email, password, phone], (err, result) => {
-      if (err) {
-        res.status(500).send('Failed to register user');
-        throw err;
-      }
-      res.status(200).send('User registered successfully');
-    });
-  });
-
-
-
-// Error handling middleware
-app.use((err, req, res, next) => {
-    console.error(err.stack);
-    res.status(500).send('Something broke!');
+app.listen(port, () => {
+    console.log(`Server running at http://localhost:${port}`);
 });
-
-app.listen(3306, () => {
-    console.log('Server running on port 3306');
-});
-
+>>>>>>> Stashed changes
