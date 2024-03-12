@@ -51,8 +51,16 @@ app.post('/tourist', async (req, res) => {
         console.error(error);
         res.status(500).json({ message: "Internal Server Error" });
     }
+<<<<<<< Updated upstream
 });refefefre
 
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);
 });//adding comment
+=======
+});
+
+app.listen(port, () => {
+    console.log(`Server running at http://localhost:${port}`);
+});
+>>>>>>> Stashed changes
