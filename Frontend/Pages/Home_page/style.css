@@ -181,7 +181,33 @@ header .search-bar-container label:hover{
 .container{
     background-color:#333;
     ;
+<<<<<<< Updated upstream:Frontend/Pages/Home_page/style.css
 }
+=======
+
+}
+
+
+
+
+.footer{
+    background: #333;
+    height: 100px;  
+}
+
+footer p{
+    text-align: center;
+    background: C;
+}
+
+.container style{
+    flex: 1;
+}
+
+    
+main{}
+
+>>>>>>> Stashed changes:Frontend/Home_page/style.css
 
 .content img{
     width: 100%;
