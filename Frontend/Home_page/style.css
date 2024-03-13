@@ -66,6 +66,7 @@ header .icons i:hover{
     font-size: 12px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    margin-right: 2rem;
 }
 
 .search-form button {
@@ -78,6 +79,7 @@ header .icons i:hover{
     cursor: pointer;
     font-size: 1rem;
     margin-left:.5rem;
+   
     
 
 }
@@ -144,12 +146,18 @@ header .icons i:hover{
     
   }
 
-  #login-btn:hover {
+#login-btn:hover {
     background-color: #b36800;
   }
 #login-btn span{
     color: rgb(253, 249, 249);
-}*/
+}
+#menu{
+    padding: 0%;
+}
+.h5{
+    font-size: 25px;
+}
 /* Custom CSS for cards */
 .card {
     width: 100%;
@@ -184,8 +192,7 @@ footer p{
 .container{
 
   background-color:#333;
- Updated upstream
-    ;
+ /*Updated upstream*/
 
 }
 
@@ -204,10 +211,10 @@ footer p{
 
 .container{
     
-Stashed changes
+/*Stashed changes
 
     
-main
+main*/
 }
 
 .content img{
