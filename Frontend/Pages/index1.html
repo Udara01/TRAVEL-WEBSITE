@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Infinity</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+        <link rel="stylesheet" href="/Frontend/css/bootstrap.css">
+
+    </head> 
+
+    <body>
+
+        <header class="header text-center text-uppercase font-weight-bold ">
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+                <div class="container-fluid d-flex justify-content-between align-items-center">
+
+                    <div class="font-weight-bold">
+                    <!-- I used Logo to access the Sidebar-->
+                     <a href="#" class="navbar-brand me-3 ms-3" onclick="toggleSidebar()">Infinity</a>
+                     </div>
+
+                     <!--Login button-->
+                     <div class="col-lg-2 col-md-1 col-sm-6 col-6 text-start font-weight-bold">
+                        <button class="btn btn-outline-light ms-3" type="button" data-bs-toggle="modal" data-bs-target="#login">Login</button>
+                    </div>
+                    
+                
+                    <!-- Right Toggler used for Navbar -->
+                    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+
+                <!--sidebar content-->
+                    <div class="sidebar">
+                    <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+                    <a href="#Profile">Profile</a>
+                    <a href="#Dashboard">Dashboard</a>
+                    <a href="#Setting">Setting</a>
+                    <a href="#log out">log out</a>
+                    </div>
+                
+                    <!--Navigation bar content-->
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0 ">
+                      <li class="nav-item ms-3 me-2"> <a class="nav-link" aria-current="page" href="#Home" style="color: #ffffff;">Home</a> </li>
+                      <li class="nav-item me-2"> <a class="nav-link" href="#AboutUs" style="color: #ffffff;">AboutUs</a> </li>
+                      <li class="nav-item me-2"> <a class="nav-link" href="#Courses" style="color: #ffffff;">Courses</a> </li>
+                      <li class="nav-item me-2"> <a class="nav-link" href="#lecturers" style="color: #ffffff;">lecturers</a> </li>
+                      <li class="nav-item me-2"> <a class="nav-link" href="#Pricing" style="color: #ffffff;">Pricing</a> </li>
+                    </ul>
+                        
+
+                    <!--Searching box and button-->
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-dark" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        </header>
+
+
+
+        <div class="modal fade" id="login" tabindex="-1" aria-labelledby="userlogin" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="userlogin">Login</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="login-form" method="post" action="/login">
+                            <div class="mb-3">
+                                <label for="userLoginEmail" class="form-label">Username</label>
+                                <input type="password" class="form-control" id="username" name="username" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="userPassword" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="password" name ="password">
+                            </div>
+                            <div class="d-grid gap-2">
+                                <button type="submit" class="btn btn-primary">Login</button>
+        
+                                <!-- Sign-up button -->
+                                Don't have an account
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#signup">Sign Up</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Sign button Process -->
+<div class="modal fade" id="signup" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-center" id="signupModalLabel">Sign Up</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="signup-form">
+                    <div class="mb-3">
+                        <label for="signup_username" class="form-label">Username</label>
+                        <input type="text" class="form-control" id="signup_username" name="signup_username" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="fullName" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="fullName" name="fullName" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" required>
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="signUp_password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="signUp_password" name="signUp_password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+<script src="login.js"></script>    
+<script src="SignUp.js"></script>    
+<script src="/Frontend/js/bootstrap.min.js"></script>
+        <script>
+            function toggleSidebar() {
+                var sidebar = document.querySelector('.sidebar');
+                sidebar.style.width = sidebar.style.width === '250px' ? '0' : '250px';
+            }
+    
+            function closeNav() {
+                document.querySelector('.sidebar').style.width = '0';
+            }
+        </script>
+    </body>
+
+
+</html>
+
