@@ -14,56 +14,16 @@
 
 }
 
-<<<<<<< Updated upstream
 header{
     position: fixed;
     top: 0;left: 0;right: 0;
     background: #1d2b44;
-=======
-.carousel-item{
-    height: 85vh;
-    min-height: 300px;
-}
-.carousel-caption{
-    bottom: 40px;
-    z-index: 2;
-}
-.carousel-caption h5{
-    font-size: 45px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-top: 25px;
-}
-.carousel-caption p{
-    width: 60%;
-    margin: auto;
-    font-size: 18px;
-    line-height: 1.9;
-}
-.carousel-inner::before{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(0,0,0,0.7);
-    z-index: 1;
-}
-
-
-header{
-    position: fixed;
-    top: 0;left: 0;right: 0;
-    background: #28291f;
->>>>>>> Stashed changes
     z-index: 1000;
     display: flex;
     align-items:center;
     justify-content: space-between;
     padding:20px;
     flex-wrap: wrap;
-<<<<<<< Updated upstream
     padding:2px;
 }
 header h1{
@@ -73,17 +33,6 @@ header h1{
 header h1 span{
     color: yellow;
 
-=======
-     
-}
-header h1{
-    color: white;
-    font-size: 40px;
-    margin-right: 35px;
-}
-header h1 span{
-    color: rgb(234, 248, 35);
->>>>>>> Stashed changes
 }
 header .logo{
     font-size: 2.5rem;
@@ -97,14 +46,12 @@ header .logo span{
     color: var(--green);
 }
 header .navbar a{
-<<<<<<< Updated upstream
     color: #fff;
     font-size:25px;
     margin:1rem;
 }
 header .navbar a:hover{
     color:#4CAF50;
-=======
     color: #def0ad;
     font-size: 1.5rem;
     margin-right:30px;
@@ -113,7 +60,6 @@ header .navbar a:hover{
 }
 header .navbar a:hover{
     color: rgb(35, 64, 92);
->>>>>>> Stashed changes
 }
 header .icons i{
     font-size: 2rem;
@@ -124,10 +70,7 @@ header .icons i{
 header .icons i:hover{
     color: var(--green);
 }
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
 /*updated search button*/
 .search-form {
     display: inline;
@@ -138,11 +81,8 @@ header .icons i:hover{
     font-size: 12px;
     border: 1px solid #ccc;
     border-radius: 5px;
-<<<<<<< Updated upstream
     margin-right: 2rem;
-=======
     margin-left:1.5rem;
->>>>>>> Stashed changes
 }
 
 .search-form button {
@@ -166,14 +106,11 @@ header .icons i:hover{
 .navbar a,
 .navbar .dropdown-item {
   font-size: 15px;
-<<<<<<< Updated upstream
-=======
   
 }
 .navbar .dropdown-item:hover{
     background-color: rgb(245, 231, 188) ;
 
->>>>>>> Stashed changes
 }
 .row1 li {
     display: inline-flex;
@@ -184,12 +121,9 @@ header .icons i:hover{
     display: none;
     cursor: pointer;
     font-size: 1.5rem;
-<<<<<<< Updated upstream
     color: white;
     margin-left: 5px;
-=======
     color: rgb(236, 238, 219);
->>>>>>> Stashed changes
 }
 
 @media (max-width: 768px) {
@@ -200,11 +134,8 @@ header .icons i:hover{
     .navbar {
         display: none;
         flex-direction: column;
-<<<<<<< Updated upstream
         background-color: #182c3f;
-=======
         background-color: #131516;
->>>>>>> Stashed changes
         padding: 10px;
     }
 
@@ -227,13 +158,10 @@ header .icons i:hover{
 }
 /*login*/
 #login-btn {
-<<<<<<< Updated upstream
     background-color:  #105f14;;
     color: rgb(15, 15, 15);
-=======
     background-color:  rgb(234, 248, 35);
     color: rgb(29, 28, 28);
->>>>>>> Stashed changes
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
