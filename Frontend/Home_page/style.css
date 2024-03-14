@@ -85,7 +85,7 @@ header .search-bar-container label{
 }
 header .search-bar-container label:hover{
     color: var(--green);
-}/*
+}
 .navbar a,
 .navbar .dropdown-item {
   font-size: 2px;
@@ -129,12 +129,12 @@ header .search-bar-container label:hover{
 
     .icons i {
         color: white;
-    }*/
-}
+    }
+
 /*login*/
 #login-btn {
     background-color: yellow;
-    color: white;
+    color:white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -149,6 +149,7 @@ header .search-bar-container label:hover{
 #login-btn span{
     color: black;
 }*/
+
 /* Custom CSS for cards */  
 .card {
     width: 100%;
@@ -237,7 +238,7 @@ main
 
 /* Style the hover effect on dropdown items */
 .dropdown-item:hover {
-    background-color: #e9ecef; /* Change the background color on hover */
+    background-color: yellow; /* Change the background color on hover */
 }
 <<<<<<< Updated upstream
 =======
@@ -292,39 +293,6 @@ main
 
 
 
-/* header waruna*/
-.navbar {
-    text-align: center;
-}
 
-.navbar a {
-    font-size: 2px;
-    padding: 1px 2px;
-    text-decoration: none;
-    color: black; /* Adjust as needed */
-}
 
-.btn-group {
-    display: inline-block;
-    position: relative;
-    margin-left: 20px; /* Adjust as needed */
-}
-
-/*end*/
-
-.menu-toggle {
-    display: none; /* Hide by default on larger screens */
-    cursor: pointer;
-}
-
-/* Style for the hamburger icon */
-.menu-toggle i {
-    font-size: 24px;
-}
-
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block; /* Show on smaller screens */
-    }
-}
 >>>>>>> Stashed changes
