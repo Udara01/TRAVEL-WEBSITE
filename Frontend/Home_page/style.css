@@ -274,3 +274,50 @@ main
 .dropdown-item:hover {
     background-color: #e9ecef; /* Change the background color on hover */
 }
+
+
+/*udara*/
+
+
+.modal-content {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+/* Custom CSS for changing modal title color */
+.modal-title {
+    color: rgb(0, 0, 0);
+}
+
+/* Custom CSS for changing login button color */
+#login-form button.btn-primary {
+    background-color: rgb(240, 240, 240);
+    border-color: yellow;
+    color: black;
+}
+
+/* Custom CSS for changing login button hover color */
+#login-form button.btn-primary:hover {
+    background-color:yellow;
+    border-color: darkyellow;
+    color: black;
+}
+
+.custom-width {
+    width: 450px; /* Set the desired width */
+    height: 45px;
+}
+
+
+#signup-form button.btn-primary {
+    background-color: yellow;;
+    border-color: darkyellow;
+    color: black;
+}
+
+#signup-form button.btn-primary:hover {
+    background-color:yellow;
+    border-color: darkyellow;
+    color: black;
+}
+/*end udara*/

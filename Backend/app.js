@@ -33,15 +33,10 @@ app.post('/addData', async (request, response) => {
     try {
         await dbService.insertData(signup_username, fullName, email, signUp_password);
         response.status(201).json({ message: 'Registration successfully' });
-        response.type("application/json");
-        response.body("{\"message\": \"Data inserted successfully\"}");
     } catch (error) {
         console.log(error);
         response.status(500).json({ message: 'Registration Failed' });
-        response.type("application/json");
-        response.body("{\"message\": \"Failed to insert data\"}");
     }
-    return response.body();
 });
 
 /*
