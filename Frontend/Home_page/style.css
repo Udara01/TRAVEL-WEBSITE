@@ -1,0 +1,276 @@
+/* styles.css */
+*{
+    font-family: montserrat; 
+}
+
+*body{
+    
+    background-color: #b47373;
+}
+
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+}
+.carousel-caption{
+    bottom: 40px;
+    z-index: 2;
+}
+.carousel-caption h5{
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+.carousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+.carousel-inner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 1;
+}
+
+
+header{
+    position: fixed;
+    top: 0;left: 0;right: 0;
+    background: #333;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:2px;
+
+    padding:1px;
+}
+header h1{
+    color: white;
+}
+header h1 span{
+    color: yellow;
+}
+header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+header .logo span{
+    color: var(--green);
+}
+header .navbar a{
+    color: #fff;
+    font-size: 2rem;
+    margin:0  .8rem;
+}
+header .navbar a:hover{
+    color: var(--green);
+}
+header .icons i{
+    font-size: 2.5rem;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 2rem;
+}
+header .icons i:hover{
+    color: var(--green);
+}
+
+header .search-bar-container{
+   position: absolute;
+   top: 100%; left: 0; right: 0;
+   padding: 1.5rem 2rem;
+   background: #333;
+   border-top: .1rem solid rgba(255, 255, 255,.2);
+   display: flex;
+   align-items: center;
+   z-index: 1001;
+   clip-path: polygon(0 0, 100% 0, 100% 0, 0 0) ;
+
+}
+header .search-bar-container.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%) ;  
+}
+
+header .search-bar-container #search-bar{
+    width: 100%;
+    padding: 1rem;
+    text-transform: none;
+    color: #333;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+}
+
+header .search-bar-container label{
+    color: #fff;
+    cursor: pointer;
+    font-size: 3rem;
+    margin-left: 1.5rem;
+
+}
+header .search-bar-container label:hover{
+    color: var(--green);
+}
+.navbar a,
+.navbar .dropdown-item {
+  font-size: 2px;
+}
+.row1 li {
+    display: inline-flex;
+    list-style: none;
+    margin-right: 1rem;
+}
+#menu-bar {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    #menu-bar {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        background-color: #343a40;
+        padding: 10px;
+    }
+
+    .navbar a {
+        color: white;
+        text-decoration: none;
+        padding: 8px 0;
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .icons i {
+        color: white;
+    }
+}
+/*login*/
+#login-btn {
+    background-color: yellow;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+  }
+
+  #login-btn:hover {
+    background-color: #b36800;
+  }
+#login-btn span{
+    color: black;
+}*/
+/* Custom CSS for cards */
+.card {
+    width: 100%;
+    height:100%;
+}
+
+/* Custom CSS for card images */
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.container{
+    background-color:#333;
+}
+
+
+
+
+.footer{
+    background: #333;
+    height: 100px;  
+}
+
+footer p{
+    text-align: center;
+    background: #333;
+}
+
+.container{
+
+  background-color:#333;
+ Updated upstream
+    ;
+
+}
+
+
+
+
+.footer{
+    background: #333;
+    height: 100px;  
+}
+
+footer p{
+    text-align: center;
+    background: C;
+}
+
+.container style{
+    flex: 1;
+}
+
+    
+main{}
+
+
+.content img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Style the dropdown button */
+.btn-group .btn-secondary {
+    background-color:#333;
+    ; /* Change the background color */
+    color: #fff; /* Change the text color */
+    border-color: #050607; /* Change the border color */
+}
+
+/* Style the dropdown menu */
+.dropdown-menu {
+    background-color: #f8f9fa; /* Change the background color */
+    color: #212529; /* Change the text color */
+}
+
+/* Style the dropdown items */
+.dropdown-item {
+    color: #212529;
+    font-size: 15px; /* Change the text color */
+}
+
+/* Style the hover effect on dropdown items */
+.dropdown-item:hover {
+    background-color: #e9ecef; /* Change the background color on hover */
+}
