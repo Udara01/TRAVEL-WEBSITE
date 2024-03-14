@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Guides</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="GuiderStyles.css">
+  
+
+</head>
+<body>
+    
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Travel Guides</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Guides
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#sri lanka">Sri Lanka</a></li>
+                <li><a class="dropdown-item" href="#">Canada</a></li>
+                <li><a class="dropdown-item" href="#">France</a></li>
+                <!-- Add more countries here -->
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="GuiderImages/travel guide1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="GuiderImages/travel guide3.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="GuiderImages/travel guide2.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col text-white">
+          <h1 class="text-center mb-4 font-weight-bold">Why Hire a Guide?</h1>
+          <p class="lead text-center">Travel guides can greatly enhance your travel experience by providing:</p>
+          <ul style="font-size: 20px">
+            <li>Local Knowledge - Guides have insider knowledge about the best places to visit, eat, and explore.</li>
+            <li>Cultural Insight - Guides can offer valuable cultural insights, helping you understand the local customs and traditions.</li>
+            <li>Convenience: Guides can handle logistics, such as transportation and tickets, making your trip more enjoyable.</li>
+            <li>Safety - Guides can help navigate unfamiliar areas and ensure you stay safe during your travels.</li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <h2 class="text-center mb-4 text-white" id="sri lanka">Guides in SRI LANKA</h2>
+
+      <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="GuiderImages/Guider1.jpg" class="card-img-top" alt="Sri Lankan Guide">
+              <div class="card-body">
+                <h5 class="card-title">Mr. Tharindu Perera</h5>
+                <p class="card-text">Meet our experienced guide from Sri Lanka, ready to show you the beauty of the island nation.</p>
+                <details class="card-details">
+                  <summary>Details</summary>
+                  <ul>
+                    <li>Skills: Cultural insights, Adventure travel</li>
+                    <li>Languages: English, Sinhala</li>
+                    <li>Age: 35</li>
+                    <li>Availability: Available</li>
+                  </ul>
+                  <a href="#" class="btn btn-primary" id="hireButton1" data-bs-toggle="modal" data-bs-target="#hireModal1">Hire Me</a>
+                </details>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Modal -->
+          <div class="modal fade" id="hireModal1" tabindex="-1" aria-labelledby="hireModalLabel1" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="hireModalLabel1">Hire Me</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <!-- Include the form content from hire_form.html here -->
+                  <iframe src="hire_form.html" frameborder="0" style="width:100%; height:400px;"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="GuiderImages/Guider2.jpg" class="card-img-top" alt="Sri Lankan Guide">
+              <div class="card-body">
+                <h5 class="card-title">Mr. Prabath Jayasuriya</h5>
+                <p class="card-text">Meet our experienced guide from Sri Lanka, ready to show you the beauty of the island nation.</p>
+                <details class="card-details">
+                  <summary>Details</summary>
+                  <ul>
+                    <li>Skills: Cultural insights, Adventure travel</li>
+                    <li>Languages: English, Sinhala</li>
+                    <li>Age: 35</li>
+                    <li>Availability: Available</li>
+                  </ul>
+                  <a href="#" class="btn btn-primary" id="hireButton1" data-bs-toggle="modal" data-bs-target="#hireModal1">Hire Me</a>
+                </details>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="hireModal1" tabindex="-1" aria-labelledby="hireModalLabel1" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="hireModalLabel2">Hire Me</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <!-- Include the form content from hire_form.html here -->
+                  <iframe src="hire_form.html" frameborder="0" style="width:100%; height:400px;"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="GuiderImages/Guider3.jpg" class="card-img-top" alt="Sri Lankan Guide">
+              <div class="card-body">
+                <h5 class="card-title">Mrs. Upeksha Maduwanthi</h5>
+                <p class="card-text">Meet our experienced guide from Sri Lanka, ready to show you the beauty of the island nation.</p>
+                <details class="card-details">
+                  <summary>Details</summary>
+                  <ul>
+                    <li>Skills: Cultural insights, Adventure travel</li>
+                    <li>Languages: English, Sinhala</li>
+                    <li>Age: 35</li>
+                    <li>Availability: Available</li>
+                  </ul>
+                  <a href="#" class="btn btn-primary" id="hireButton1" data-bs-toggle="modal" data-bs-target="#hireModal1">Hire Me</a>
+                </details>
+              </div>
+            </div>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="hireModal1" tabindex="-1" aria-labelledby="hireModalLabel1" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="hireModalLabel3">Hire Me</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <!-- Include the form content from hire_form.html here -->
+                  <iframe src="hire_form.html" frameborder="0" style="width:100%; height:400px;"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="GuiderImages/Guider4.jpg" class="card-img-top" alt="Sri Lankan Guide">
+              <div class="card-body">
+                <h5 class="card-title">Mrs. Upeksha Maduwanthi</h5>
+                <p class="card-text">Meet our experienced guide from Sri Lanka, ready to show you the beauty of the island nation.</p>
+                <details class="card-details">
+                  <summary>Details</summary>
+                  <ul>
+                    <li>Skills: Cultural insights, Adventure travel</li>
+                    <li>Languages: English, Sinhala</li>
+                    <li>Age: 35</li>
+                    <li>Availability: Available</li>
+                  </ul>
+                  <a href="#" class="btn btn-primary" id="hireButton1" data-bs-toggle="modal" data-bs-target="#hireModal1">Hire Me</a>
+                </details>
+              </div>
+            </div>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="hireModal1" tabindex="-1" aria-labelledby="hireModalLabel1" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="hireModalLabel4">Hire Me</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <!-- Include the form content from hire_form.html here -->
+                  <iframe src="hire_form.html" frameborder="0" style="width:100%; height:400px;"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="GuiderImages/Guider5.jpg" class="card-img-top" alt="Sri Lankan Guide">
+              <div class="card-body">
+                <h5 class="card-title">Mrs. Upeksha Maduwanthi</h5>
+                <p class="card-text">Meet our experienced guide from Sri Lanka, ready to show you the beauty of the island nation.</p>
+                <details class="card-details">
+                  <summary>Details</summary>
+                  <ul>
+                    <li>Skills: Cultural insights, Adventure travel</li>
+                    <li>Languages: English, Sinhala</li>
+                    <li>Age: 35</li>
+                    <li>Availability: Available</li>
+                  </ul>
+                  <a href="#" class="btn btn-primary" id="hireButton1" data-bs-toggle="modal" data-bs-target="#hireModal1">Hire Me</a>
+                </details>
+              </div>
+            </div>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="hireModal1" tabindex="-1" aria-labelledby="hireModalLabel1" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="hireModalLabel5">Hire Me</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <!-- Include the form content from hire_form.html here -->
+                  <iframe src="hire_form.html" frameborder="0" style="width:100%; height:400px;"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="GuiderImages/Guider6.jpg" class="card-img-top" alt="Sri Lankan Guide">
+              <div class="card-body">
+                <h5 class="card-title">Mrs. Upeksha Maduwanthi</h5>
+                <p class="card-text">Meet our experienced guide from Sri Lanka, ready to show you the beauty of the island nation.</p>
+                <details class="card-details">
+                  <summary>Details</summary>
+                  <ul>
+                    <li>Skills: Cultural insights, Adventure travel</li>
+                    <li>Languages: English, Sinhala</li>
+                    <li>Age: 35</li>
+                    <li>Availability: Available</li>
+                  </ul>
+                  <a href="#" class="btn btn-primary" id="hireButton1" data-bs-toggle="modal" data-bs-target="#hireModal1">Hire Me</a>
+                </details>
+              </div>
+            </div>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="hireModal6" tabindex="-1" aria-labelledby="hireModalLabel1" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="hireModalLabel1">Hire Me</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <!-- Include the form content from hire_form.html here -->
+                  <iframe src="hire_form.html" frameborder="0" style="width:100%; height:400px;"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!---Footer Section--->
+    <footer class="bg-dark p-2 pt-5 pb-4 text-white" style="width: 100%;">
+        <div class="container text-center text-md-left">
+        <div class="row text-center text-md-left">
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Travel Guide</h5>
+                <p>"Explore the world with us! Your go-to destination for travel inspiration, tips, and adventures. Welcome to Travel Guide"</p>
+            </div>
+  
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Quick Links</h5>
+                <p>
+                    <a href="#" class="text-white" style="text-decoration: none;">Home</a>
+                </p>
+  
+                <p>
+                    <a href="#Services" class="text-white" style="text-decoration: none;">Services</a>
+                </p>
+  
+                <p>
+                    <a href="##Hire_Guide" class="text-white" style="text-decoration: none;">Hire Guide</a>
+                </p>
+  
+                <p>
+                    <a href="#gallery" class="text-white" style="text-decoration: none;">Areas</a>
+                </p>
+  
+                <p>
+                    <a href="#contact" class="text-white" style="text-decoration: none;">Emergency</a>
+                </p>
+            </div>
+  
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Locate Us</h5>
+                <p>
+                    <i class="fas fa-home mr-3"></i> <br>123 Main Street <br>Galle <br>Sri Lanka <br>80000 <br>
+                </p>
+            </div>
+  
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact Us</h5>
+                <p>
+                    <i class="bi bi-envelope-at-fill"></i><a href="#">travel.guide.info@gmail.com</a>
+                </p>
+                <p>
+                    <i class="fas fa-phone mr-3"></i> +94 757578521
+                </p>
+                <p>
+                    <i class="fas fa-print mr-3"></i> +94 917778885
+                </p>
+            </div>
+  
+        </div>
+  
+        <hr class="mb-4">
+        <div class="row align-items-center">
+  
+            <div class="col-md-7 col-lg-8">
+                <p>Copyright @2024 All Right Reserved by:
+                    <a href="#" style="text-decoration: none;">
+                        <strong class="text-warning">@Travel_Guide</strong>
+                    </a>
+                </p>
+            </div>
+  
+            <div class="col-md-5 col-lg-4">
+                <div class="text-right text-md-right">
+  
+                    <ul class="list-unstyled list-inline">
+  
+                        <li class="list-inline-item">
+                            <a href="#" class="btn-floating-sm text-white" style="font-size: 23px;">
+                                <i class="fab fa-facebook"></i></a>
+                        </li>
+  
+                        <li class="list-inline-item">
+                            <a href="#" class="btn-floating-sm text-white" style="font-size: 23px;">
+                                <i class="fab fa-twitter"></i></a>
+                        </li>
+  
+                        <li class="list-inline-item">
+                            <a href="#" class="btn-floating-sm text-white" style="font-size: 23px;">
+                                <i class="fab fa-google-plus"></i></a>
+                        </li>
+  
+                        <li class="list-inline-item">
+                            <a href="#" class="btn-floating-sm text-white" style="font-size: 23px;">
+                                <i class="fab fa-linkedin-in"></i></a>
+                        </li>
+  
+                        <li class="list-inline-item">
+                            <a href="#" class="btn-floating-sm text-white" style="font-size: 23px;">
+                                <i class="fab fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+  
+  
+        </div>
+        </div>
+    </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const hireForm = document.getElementById('hireForm');
+      const hireButton = document.getElementById('hireButton');
+  
+      hireForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        // You can handle the form submission here, e.g., send data to a server
+  
+        // Close the modal after form submission
+        const hireModal = document.getElementById('hireModal');
+        const bootstrapModal = bootstrap.Modal.getInstance(hireModal);
+        bootstrapModal.hide();
+  
+        // Optional: Reset the form fields
+        hireForm.reset();
+      });
+  
+      hireButton.addEventListener('click', function() {
+        const hireModal = document.getElementById('hireModal');
+        const bootstrapModal = new bootstrap.Modal(hireModal);
+        bootstrapModal.show();
+      });
+    });
+  </script>
+
+
+
+
+</body>
+</html>
