@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>05</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     
     <link rel="stylesheet" href="style.css">
 
 </head>
 
+<!-- Menu page -->
 
-  
-
-<!-- Menu -->
 <header>
   <div id="menu-bar" class="fas fa-bars"></div>
   <h1><span>Travel</span>Guide</h1>
@@ -39,13 +39,109 @@
       
   </nav>
 
+<!-- Udara-->>
+  <!--Login button and Search bar-->
+  <div class="icons text-start font-weight-bold">
+    <form class="d-flex" role="search">
+        <i class="fas fa-search" id="search-btn"></i>
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-light me-2" type="submit">Search</button>
+        <button id="login-btn" class="btn btn-outline-light ms-2 me-3" type="button" data-bs-toggle="modal" data-bs-target="#login"><span>Login</span></button>
+    </form>
+</div>
+
+    
+  
+
+</header>
+
+<!--Login part-->
+<div class="modal fade" id="login" tabindex="-1" aria-labelledby="userlogin" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h3 class="modal-title fw-bold" id="userlogin">Login</h3>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <form id="login-form" method="post" action="/login">
+                  <div class="mb-3">
+                      <label for="userLoginEmail" class="form-label fw-bold">Username</label>
+                      <input type="text" class="form-control" id="username" name="username" aria-describedby="emailHelp">
+                  </div>
+                  <div class="mb-3">
+                      <label for="userPassword" class="form-label fw-bold">Password</label>
+                      <input type="password" class="form-control" id="password" name ="password">
+                      <div id="forgotPassword" class="form-text"><a href="#">Forgot Password?</a></div>
+                  </div>
+                  <div class="d-grid gap-2">
+                      <button type="submit" class="btn btn-primary fw-bold">Login</button>
+
+                      <!-- Sign-up button -->
+                      Don't have an account
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#signup">Sign Up</button>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+ <!-- Sign button Process -->
+ <div class="modal fade" id="signup" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h3 class="modal-title text-center fw-bold" id="signupModalLabel">Sign Up</h3>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <form id="signup-form">
+                  <div class="mb-3">
+                      <label for="signup_username" class="form-label fw-bold">Username</label>
+                      <input type="text" class="form-control" id="signup_username" name="signup_username" required>
+                  </div>
+
+                  <div class="mb-3">
+                      <label for="fullName" class="form-label fw-bold">Full Name</label>
+                      <input type="text" class="form-control" id="fullName" name="fullName" required>
+                  </div>
+
+                  <div class="mb-3">
+                      <label for="email" class="form-label fw-bold">Email address</label>
+                      <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" required>
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                  </div>
+                  <div class="mb-3">
+                      <label for="signUp_password" class="form-label fw-bold">Password</label>
+                      <input type="password" class="form-control" id="signUp_password" name="signUp_password" required>
+                  </div>
+                  <button type="submit" class="btn btn-primary  btn-lg d-block mx-auto custom-width fw-bold">Sign Up</button>
+                  
+              </form>
+              <div class="mt-2 text-center">
+                Already have an account?
+                <button type="button" class="btn btn-warning d-block mx-auto" data-bs-toggle="modal" data-bs-target="#login">Log In</button>
+            </div>
+          </div>
+      </div>
+  </div>
+  
+</div>
+
+<!--end-->
+
   <div class="icons">
     <i class="fas fa-search" id="search-btn"></i>
     <button id="login-btn"><span>Login</span></button>
   </div>
+
 </header>
 
-<div id="carouselExampleCaptions" class="carousel slide">
+
+      <!----------------------------------------------------------------------------------------------------------------->
+  <div id="carouselExampleCaptions" class="carousel slide">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -87,215 +183,300 @@
   </button>
 </div>
 
+      <br>
 
-
-
-     
-  <!--- Visiting Places ---->
-    <section id="places" class="places-section-padding">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-              <div class="card h-100">
-                <img src="image/kandy.png" class="card-img-top" alt="...">
-                <div class="card-body ">
-                  <h5 class="card-title text-uppercase">Kandy</h5>
-                  <p class="card-text">"Discover Kandy, Sri Lanka - a city of ancient heritage and natural beauty. Visit the sacred Temple of the Tooth Relic and immerse yourself in vibrant festivals amidst lush hills. Explore the heart of Sri Lanka's cultural essence in Kandy."</p>
-                </div>
-                <div class="card-footer">
-                  <small class="text-body-secondary"><a href="#" class="btn btn-primary">Read More</a></small>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="col">
-              <div class="card h-100">
-                <img src="image/galle.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title text-uppercase">Galle</h5>
-                  <p class="card-text">"Galle: A historic gem on Sri Lanka's southwestern coast. Explore the iconic Galle Fort, relax on pristine beaches, and immerse yourself in the vibrant culture of this charming city."</p>
-                </div>
-                <div class="card-footer">
-                    <small class="text-body-secondary"><a href="#" class="btn btn-primary">Read More</a></small>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-                <div class="card h-100">
-                  <img src="image/sigiriya.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title text-uppercase">Sigiriya</h5>
-                    <p class="card-text">"Sigiriya: Discover the ancient marvel of Sri Lanka's Lion Rock. Climb to the top for breathtaking views, explore ancient frescoes, and delve into the fascinating history of this UNESCO World Heritage Site."</p>
-                  </div>
-                  <div class="card-footer">
-                      <small class="text-body-secondary"><a href="#" class="btn btn-primary">Read More</a></small>
-                  </div>
-                </div>
-              </div>
-
-            
+      
+<!--- Visiting Places Part 1 ---->
+<section id="places" class="places-section-padding">
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="image/kandy.png" class="card-img-top" alt="...">
+          <div class="card-body ">
+            <h5 class="card-title text-uppercase">Kandy</h5>
+            <p class="card-text">"Discover Kandy, Sri Lanka - a city of ancient heritage and natural beauty. Visit the sacred Temple of the Tooth Relic and immerse yourself in vibrant festivals amidst lush hills. Explore the heart of Sri Lanka's cultural essence in Kandy."</p>
           </div>
-          <br>
-          
-          <!-- Places Part 2 -->
-          <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-              <div class="card h-100">
-                <img src="image/nuwara eliaya.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title text-uppercase">Nuwara Elliya</h5>
-                  <p class="card-text">"Nuwara Eliya: Sri Lanka's picturesque hill station, known for its cool climate, lush tea plantations, and stunning landscapes. Discover colonial charm, scenic train rides, and outdoor adventures in this enchanting destination."</p>
-                </div>
-                <div class="card-footer">
-                  <small class="text-body-secondary"><a href="#" class="btn btn-primary">Read More</a></small>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="col">
-                <div class="card h-100">
-                  <img src="image/yala.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title text-uppercase">Yala National Park</h5>
-                    <p class="card-text">"Yala National Park: Home to diverse wildlife and captivating landscapes. Embark on a safari adventure through this renowned sanctuary to encounter majestic elephants, elusive leopards, and a wealth of bird species."</p>
-                  </div>
-                  <div class="card-footer">
-                      <small class="text-body-secondary"><a href="#" class="btn btn-primary">Read More</a></small>
-                  </div>
-                </div>
-              </div>
-
-
-            <div class="col">
-              <div class="card h-100">
-                <img src="image/nuwara eliaya.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title text-uppercase">Adam's Peek</h5>
-                  <p class="card-text">"Adam's Peak: An iconic pilgrimage site in Sri Lanka. Ascend to the summit for breathtaking views and spiritual significance."</p>
-                </div>
-                <div class="card-footer">
-                    <small class="text-body-secondary"><a href="#" class="btn btn-primary">Read More</a></small>
-                </div>
-              </div>
-            </div>
+          <div class="card-footer">
+            <small class="text-body-secondary"><a href="#" class="btn btn-primary">Find Out More</a></small>
+          </div>
+        </div>
       </div>
 
-    </section>
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="image/galle.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-uppercase">Galle</h5>
+            <p class="card-text">"Galle: A historic gem on Sri Lanka's southwestern coast. Explore the iconic Galle Fort, relax on pristine beaches, and immerse yourself in the vibrant culture of this charming city."</p>
+          </div>
+          <div class="card-footer">
+              <small class="text-body-secondary"><a href="#" class="btn btn-primary">Find Out More</a></small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+          <div class="card h-100">
+            <img src="image/sigiriya.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-uppercase">Sigiriya</h5>
+              <p class="card-text">"Sigiriya: Discover the ancient marvel of Sri Lanka's Lion Rock. Climb to the top for breathtaking views, explore ancient frescoes, and delve into the fascinating history of this UNESCO World Heritage Site."</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-body-secondary"><a href="#" class="btn btn-primary">Find Out More</a></small>
+            </div>
+          </div>
+        </div>
+
+      
+    </div>
+    <br>
+    
+    <!--- Visiting Places Part 2 ---->
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="image/nuwara eliaya.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-uppercase">Nuwara Elliya</h5>
+            <p class="card-text">"Nuwara Eliya: Sri Lanka's picturesque hill station, known for its cool climate, lush tea plantations, and stunning landscapes. Discover colonial charm, scenic train rides, and outdoor adventures in this enchanting destination."</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary"><a href="#" class="btn btn-primary">Find Out More</a></small>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col">
+          <div class="card h-100">
+            <img src="image/yala.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-uppercase">Yala National Park</h5>
+              <p class="card-text">"Yala National Park: Home to diverse wildlife and captivating landscapes. Embark on a safari adventure through this renowned sanctuary to encounter majestic elephants, elusive leopards, and a wealth of bird species."</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-body-secondary"><a href="#" class="btn btn-primary">Find Out More</a></small>
+            </div>
+          </div>
+        </div>
+
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="image/nuwara eliaya.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-uppercase">Adam's Peek</h5>
+            <p class="card-text">"Adam's Peak: An iconic pilgrimage site in Sri Lanka. Ascend to the summit for breathtaking views and spiritual significance."</p>
+          </div>
+          <div class="card-footer">
+              <small class="text-body-secondary"><a href="#" class="btn btn-primary">Find Out More</a></small>
+          </div>
+        </div>
+      </div>
+      
+</div>
+<br>
+
+<!--- Visiting Places Part 3 ---->
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img src="image/colombo2.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-uppercase">Colombo</h5>
+        <p class="card-text">"Colombo: The bustling capital city of Sri Lanka. Discover a vibrant fusion of cultures, modern skyscrapers, and historic landmarks amidst the lively streets of this dynamic metropolis."</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary"><a href="#" class="btn btn-primary">Find Out More</a></small>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col">
+      <div class="card h-100">
+        <img src="image/mirissa1.jpg" class="card-img-top " alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-uppercase">Mirissa</h5>
+          <p class="card-text">"Mirissa: A coastal paradise in Sri Lanka known for its stunning beaches, vibrant sunsets, and laid-back atmosphere. Experience blissful relaxation, exhilarating whale watching, and fresh seafood delights in this tropical haven."</p>
+        </div>
+        <div class="card-footer">
+            <small class="text-body-secondary"><a href="#" class="btn btn-primary">Find Out More</a></small>
+        </div>
+      </div>
+    </div>
+
+
+  <div class="col">
+    <div class="card h-100">
+      <img src="image/polonnaruwa-800x750.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-uppercase">Polonnaruwa</h5>
+        <p class="card-text">"Polonnaruwa: Ancient capital of Sri Lanka, home to UNESCO-listed ruins revealing a rich history of kings and kingdoms. Discover majestic stone sculptures, intricately carved temples, and serene reservoirs amidst lush greenery."</p>
+      </div>
+      <div class="card-footer">
+          <small class="text-body-secondary"><a href="#" class="btn btn-primary">Read More</a></small>
+      </div>
+    </div>
+  </div>
+</div>
+
+</section>
+<br>
 
 <!---Footer Section--->
-  <footer class="bg-dark p-2  pt-5 pb-4 text-white">
-    <div class="container text-center text-md-left">
+<footer class="bg-dark p-2 pt-5 pb-4 text-white" style="width: 100%;">
+  <div class="container text-center text-md-left">
       <div class="row text-center text-md-left">
-        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Travel Guide</h5>
-          <p>"Explore the world with us! Your go-to destination for travel inspiration, tips, and adventures. Welcome to Travel Guide"</p>
-        </div>
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Travel Guide</h5>
+              <p>"Explore the world with us! Your go-to destination for travel inspiration, tips, and adventures. Welcome to Travel Guide"</p>
+          </div>
 
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Quick Links</h5>
-          <p>
-            <a href="#" class="text-white" style="text-decoration: none;">Home</a>
-          </p>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Quick Links</h5>
+              <p>
+                  <a href="#" class="text-white" style="text-decoration: none;">Home</a>
+              </p>
 
-          <p>
-            <a href="#Services" class="text-white" style="text-decoration: none;">Services</a>
-          </p>
+              <p>
+                  <a href="#Services" class="text-white" style="text-decoration: none;">Services</a>
+              </p>
 
-          <p>
-            <a href="##Hire_Guide" class="text-white" style="text-decoration: none;">Hire Guide</a>
-          </p>
+              <p>
+                  <a href="##Hire_Guide" class="text-white" style="text-decoration: none;">Hire Guide</a>
+              </p>
 
-          <p>
-            <a href="#gallery" class="text-white" style="text-decoration: none;">Areas</a>
-          </p>
+              <p>
+                  <a href="#gallery" class="text-white" style="text-decoration: none;">Areas</a>
+              </p>
 
-          <p>
-            <a href="#contact" class="text-white" style="text-decoration: none;">Emergency</a>
-          </p>
-        </div>
+              <p>
+                  <a href="#contact" class="text-white" style="text-decoration: none;">Emergency</a>
+              </p>
+          </div>
 
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Locate Us</h5>
-          <p>
-            <i class="fas fa-home mr-3"></i> <br>123 Main Street <br>Galle <br>Sri Lanka <br>80000 <br>
-          </p>
-        </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Locate Us</h5>
+              <p>
+                  <i class="fas fa-home mr-3"></i> <br>123 Main Street <br>Galle <br>Sri Lanka <br>80000 <br>
+              </p>
+          </div>
 
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact Us</h5>
-          <p>
-            <i class="bi bi-envelope-at-fill"></i><a href="#">travel.guide.info@gmail.com</a>
-          </p>
-          <p>
-            <i class="fas fa-phone mr-3"></i> +94 757578521
-          </p>
-          <p>
-            <i class="fas fa-print mr-3"></i> +94 917778885
-          </p>
-        </div>
-        
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact Us</h5>
+              <p>
+                  <i class="bi bi-envelope-at-fill"></i><a href="#">travel.guide.info@gmail.com</a>
+              </p>
+              <p>
+                  <i class="fas fa-phone mr-3"></i> +94 757578521
+              </p>
+              <p>
+                  <i class="fas fa-print mr-3"></i> +94 917778885
+              </p>
+          </div>
+
       </div>
 
       <hr class="mb-4">
       <div class="row align-items-center">
 
-        <div class="col-md-7 col-lg-8">
-          <p>Copyright @2024 All Right Reserved by:
-            <a href="#" style="text-decoration: none;">
-              <strong class="text-warning">@Travel_Guide</strong>
-            </a>
-          </p>
-        </div>
-
-        <div class="col-md-5 col-lg-4">
-          <div class="text-right text-md-right">
-            
-            <ul class="list-unstyled list-inline">
-
-              <li class="list-inline-item">
-                <a href="#" class="btn-floating-sm text-white" style="font-size: 23px;">
-                <i class="fab fa-facebook"></i></a>
-              </li>
-
-            <li class="list-inline-item">
-              <a href="#" class="btn-floating-sm text-white" style="font-size: 23px;">
-                <i class="fab fa-twitter"></i></a>
-            </li>
-
-            <li class="list-inline-item">
-              <a href="#" class="btn-floating-sm text-white" style="font-size: 23px;">
-                <i class="fab fa-google-plus"></i></a>
-            </li>
-
-            <li class="list-inline-item">
-              <a href="#" class="btn-floating-sm text-white" style="font-size: 23px;">
-                <i class="fab fa-linkedin-in"></i></a>
-            </li>
-
-            <li class="list-inline-item">
-              <a href="#" class="btn-floating-sm text-white" style="font-size: 23px;">
-                <i class="fab fa-youtube"></i></a>
-            </li>
+          <div class="col-md-7 col-lg-8">
+              <p>Copyright @2024 All Right Reserved by:
+                  <a href="#" style="text-decoration: none;">
+                      <strong class="text-warning">@Travel_Guide</strong>
+                  </a>
+              </p>
           </div>
-        </div>
+
+          <div class="col-md-5 col-lg-4">
+              <div class="text-right text-md-right">
+
+                  <ul class="list-unstyled list-inline">
+
+                      <li class="list-inline-item">
+                          <a href="#" class="btn-floating-sm text-white" style="font-size: 23px;">
+                              <i class="fab fa-facebook"></i></a>
+                      </li>
+
+                      <li class="list-inline-item">
+                          <a href="#" class="btn-floating-sm text-white" style="font-size: 23px;">
+                              <i class="fab fa-twitter"></i></a>
+                      </li>
+
+                      <li class="list-inline-item">
+                          <a href="#" class="btn-floating-sm text-white" style="font-size: 23px;">
+                              <i class="fab fa-google-plus"></i></a>
+                      </li>
+
+                      <li class="list-inline-item">
+                          <a href="#" class="btn-floating-sm text-white" style="font-size: 23px;">
+                              <i class="fab fa-linkedin-in"></i></a>
+                      </li>
+
+                      <li class="list-inline-item">
+                          <a href="#" class="btn-floating-sm text-white" style="font-size: 23px;">
+                              <i class="fab fa-youtube"></i></a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
 
 
       </div>
-    </div>
+  </div>
+</footer>
 
-  </footer>
+<!-- Udara-->
 
+<!--Do not change-->
+    <script src="login.js"></script>    <!--login part related to the backend -->
+    <script src="SignUp1.js"></script>   <!--SignUp part related to the backend -->
+    
+        <script> //Js part related to the Login 
+            function toggleSidebar() {
+                var sidebar = document.querySelector('.sidebar');
+                sidebar.style.width = sidebar.style.width === '250px' ? '0' : '250px';
+            }
+    
+            function closeNav() {
+                document.querySelector('.sidebar').style.width = '0';
+            }
+         </script>
+<!--end  udara-->
 
-
-  
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script><!--Bootstrap online-->
+  <script src="/Frontend/js/bootstrap.min.js"></script> <!--Bootstrap offline-->      
 
     <script>
         document.getElementById('menu-bar').addEventListener('click', function () {
             document.querySelector('.navbar').style.display = 'flex';
         });
     </script>
+
+<!-- Udara-->
+    <script>//SignUo control
+      document.addEventListener('DOMContentLoaded', function () {
+          var myModal = new bootstrap.Modal(document.getElementById('signup'));
+
+          myModal._element.addEventListener('hidden.bs.modal', function () {
+              location.reload();
+          });
+      });
+    </script>
+
+<!--end  udara-->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+        document.getElementById('menu-bar').addEventListener('click', function () {
+            document.querySelector('.navbar').style.display = 'flex';
+        });
+  </script>
+
 </body>
 </html>
