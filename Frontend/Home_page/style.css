@@ -46,42 +46,22 @@
 header{
     position: fixed;
     top: 0;left: 0;right: 0;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-    background: #0d263d;
-=======
-    background: #1b263d;
->>>>>>> Stashed changes
-=======
     background: #1f2a49;
->>>>>>> Stashed changes
     z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: space-between;
-<<<<<<< Updated upstream
-    padding:20px;
+    padding:10px;
     flex-wrap: wrap;
     padding:1px;
-}
-header h1{
-    color: white;
-<<<<<<< Updated upstream
-=======
-    margin-right: 5px;
->>>>>>> Stashed changes
-    margin-left: 5px;
-=======
-    padding:2px;
 
-    
 }
-header h1{
+ header h1{
     color: white;
     margin-left: 5px;
-    margin-right: 5px;
->>>>>>> Stashed changes
+    margin-right: 5px; 
 }
+
 header h1 span{
     color: yellow;
 }
@@ -227,7 +207,7 @@ header .search-bar-container label:hover{
 }
 
 .container{
-    background-color:#333;
+    background-color:#adccf0;
 }
 
 
