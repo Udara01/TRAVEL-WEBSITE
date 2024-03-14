@@ -278,6 +278,18 @@ main
     color: rgb(179, 255, 64);
 }
 
+.card-footer-galle-fort{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3); /* Optional: add background color for better readability */
+    width: 800px; /* Adjust width as needed */
+    max-width: 100%; /* Set a maximum width */
+    height: auto;
+}
+
 
   
 
@@ -352,3 +364,22 @@ main
     color: black;
 }
 /*end udara*/
+
+
+/*Galle Fort*/
+
+
+.card-footer-galle-fort{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: add background color for better readability */
+    width: 800px; /* Adjust width as needed */
+    max-width: 100%; /* Set a maximum width */
+    height: auto;
+}
+.card-footer-galle-fort h5{
+    color: rgb(179, 255, 64);
+}
