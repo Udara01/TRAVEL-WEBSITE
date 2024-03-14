@@ -54,10 +54,12 @@ header{
     justify-content: space-between;
     padding:2px;
 
-    padding:1px;
+     
 }
 header h1{
     color: white;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 header h1 span{
     color: yellow;
