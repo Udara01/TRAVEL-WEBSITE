@@ -8,6 +8,10 @@
     background-color: #b47373;
 }
 
+
+.section-padding{
+    padding: 100px 0;
+}
 .carousel-item{
     height: 100vh;
     min-height: 300px;
@@ -215,9 +219,7 @@ footer p{
     background: #333;
 }
 
-.container{
-    
-}
+
 
 .content img{
     width: 100%;
@@ -225,3 +227,22 @@ footer p{
     display: block;
 }
 
+/* Beach Side page CSS for cards*/
+.card-footer-beach {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3); /* Optional: add background color for better readability */
+    width: 800px; /* Adjust width as needed */
+    max-width: 100%; /* Set a maximum width */
+    height: auto;
+}
+
+.card-footer-beach h5{
+    color: rgb(179, 255, 64);
+}
+
+
+  
