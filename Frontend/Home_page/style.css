@@ -1,9 +1,48 @@
 /* styles.css */
+*{
+    font-family: montserrat; 
+}
 
 *body{
-    background-image:url("image/sri-lanka.jpg");
+    
     background-color: #b47373;
 }
+
+
+.section-padding{
+    padding: 100px 0;
+}
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+}
+.carousel-caption{
+    bottom: 40px;
+    z-index: 2;
+}
+.carousel-caption h5{
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+.carousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+.carousel-inner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 1;
+}
+
 
 header{
     position: fixed;
@@ -15,10 +54,12 @@ header{
     justify-content: space-between;
     padding:2px;
 
-    padding:1px;
+     
 }
 header h1{
     color: white;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 header h1 span{
     color: yellow;
@@ -130,11 +171,11 @@ header .search-bar-container label:hover{
     .icons i {
         color: white;
     }
-
+}
 /*login*/
 #login-btn {
     background-color: yellow;
-    color:white;
+    color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -144,13 +185,12 @@ header .search-bar-container label:hover{
   }
 
   #login-btn:hover {
-    background-color:yellow;
+    background-color: #b36800;
   }
 #login-btn span{
     color: black;
 }*/
-
-/* Custom CSS for cards */  
+/* Custom CSS for cards */
 .card {
     width: 100%;
     height:100%;
@@ -181,6 +221,9 @@ footer p{
     background: #333;
 }
 
+
+
+
 .container{
 
   background-color:#333;
@@ -210,11 +253,45 @@ Stashed changes
 main
 }
 
+
 .content img{
     width: 100%;
     height: auto;
     display: block;
 }
+
+
+/* Beach Side page CSS for cards*/
+.card-footer-beach {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3); /* Optional: add background color for better readability */
+    width: 800px; /* Adjust width as needed */
+    max-width: 100%; /* Set a maximum width */
+    height: auto;
+}
+
+.card-footer-beach h5{
+    color: rgb(179, 255, 64);
+}
+
+.card-footer-galle-fort{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3); /* Optional: add background color for better readability */
+    width: 800px; /* Adjust width as needed */
+    max-width: 100%; /* Set a maximum width */
+    height: auto;
+}
+
+
+  
 
 /* Style the dropdown button */
 .btn-group .btn-secondary {
@@ -238,10 +315,8 @@ main
 
 /* Style the hover effect on dropdown items */
 .dropdown-item:hover {
-    background-color: yellow; /* Change the background color on hover */
+    background-color: #e9ecef; /* Change the background color on hover */
 }
-<<<<<<< Updated upstream
-=======
 
 
 /*udara*/
@@ -291,8 +366,20 @@ main
 /*end udara*/
 
 
+/*Galle Fort*/
 
 
-
-
->>>>>>> Stashed changes
+.card-footer-galle-fort{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: add background color for better readability */
+    width: 800px; /* Adjust width as needed */
+    max-width: 100%; /* Set a maximum width */
+    height: auto;
+}
+.card-footer-galle-fort h5{
+    color: rgb(179, 255, 64);
+}
