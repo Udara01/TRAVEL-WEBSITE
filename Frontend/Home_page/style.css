@@ -383,3 +383,29 @@ main
 .card-footer-galle-fort h5{
     color: rgb(179, 255, 64);
 }
+
+/*kandy*/
+
+.card-footer-kandy{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    background-color: rgba(101, 114, 113, 0.8); /* Optional: add background color for better readability */
+    width: 800px; /* Adjust width as needed */
+    max-width: 100%; /* Set a maximum width */
+    height: auto;
+}
+.card-footer-kandy h5{
+    color: rgb(179, 255, 64);
+}
+
+.kandy-card-title{
+    
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+
+/*end kandy*/
