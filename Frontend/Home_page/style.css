@@ -402,11 +402,15 @@ footer p{
 /*end kandy*/
 
 
+<<<<<<< Updated upstream
 .navbar {
     text-align: center;
     color: yellow;
     font-size:smaller;
 }
+=======
+/*start cultural*/
+>>>>>>> Stashed changes
 
 .navbar a {
     display: inline-block;
