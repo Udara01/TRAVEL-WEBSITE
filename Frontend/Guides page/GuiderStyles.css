@@ -1,0 +1,96 @@
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #142229;
+    }
+
+    .navbar {
+      background-color: #b28383;
+    }
+    .carousel-item{
+      height: 100vh;
+      min-height: 300px;
+  }
+  .carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+    width: 100%;
+}
+
+.carousel-caption h5 {
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+
+.carousel-caption p {
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+.carousel-inner::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 1;
+}
+
+    .card {
+      border: 1px solid #e1e1e1;
+      border-radius: 8px;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+
+    .card-text {
+      font-size: 0.875rem;
+    }
+
+    .card-details {
+      font-size: 0.875rem;
+      margin-top: 0.5rem;
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+
+    .btn-primary:hover {
+      background-color: #0056b3;
+      border-color: #0056b3;
+    }
+
+    hr {
+      border-top: 1px solid #e1e1e1;
+    }
+
+    
+  .btn-outline-custom {
+    color: #f9a825;
+    border-color: #f9a825;
+  }
+
+  .btn-outline-custom:hover {
+    color: #fff;
+    background-color: #f9a825;
+    border-color: #f9a825;
+  }

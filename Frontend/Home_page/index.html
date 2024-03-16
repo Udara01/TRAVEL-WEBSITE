@@ -18,24 +18,23 @@
 
 <header>
   <div id="menu-bar" class="fas fa-bars"></div>
-  <h1><span>Travel</span>Guide</h1>
+    <h1><span>Travel</span>Guide</h1>
   <nav class="navbar">
-      <a href="#home">Home</a>
-      <a href="#Services ">Services </a>
-      <a href="#Hire_Guide">Hire Guide</a>
+      <a href="/Frontend/Home_page/index.html">Home</a>
+      <a href="/Frontend/Home_page/Services.html ">Services </a>
+      <a href="/Frontend/Guides page/Guider.html">Hire Guide</a>
       <div class="btn-group">
-          <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
             Areas
-          </button>
-          <ul class="dropdown-menu dropdown-menu-end">
-            <li><button class="dropdown-item" type="button">Beach area</button></li>
-            <li><button class="dropdown-item" type="button">Hiking area</button></li>
-            <li><button class="dropdown-item" type="button">Nature area</button></li>
-            <li><button class="dropdown-item" type="button">Cultural Triangle </button></li>
-
-          </ul>
-        </div>
-      </a>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end" >
+            <li><button class="dropdown-item" type="button"><a href="Beach_area.html" style="color: black;font-size:20px;">Beach area</a></button></li>
+            <li><button class="dropdown-item" type="button"><a href="Hiking_area.html"style="color:black;font-size:20px;" >Hiking area</a></button></li>
+            <li><button class="dropdown-item" type="button"><a href="Nature_area.html"style="color:black;font-size:20px;">Nature area</a></button></li>
+            <li><button class="dropdown-item" type="button"><a href="Cultural_Triangle.html"style="color:black;font-size:20px;">Cultural Triangle</a></button></li>
+        </ul>
+      </div>
+    
       
   </nav>
 
@@ -46,13 +45,11 @@
         <i class="fas fa-search" id="search-btn"></i>
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-light me-2" type="submit">Search</button>
-        <button id="login-btn" class="btn btn-outline-light ms-2 me-3" type="button" data-bs-toggle="modal" data-bs-target="#login"><span>Login</span></button>
+        <button id="logout-btn" class="btn btn-outline-light ms-2 me-3 text-color: black;" type="button" data-bs-toggle="modal" data-bs-target="#logout-btn"><span>LogOut</span></button>
     </form>
 </div>
 
     
-  
-
 </header>
 
 <!--Login part-->
@@ -132,12 +129,7 @@
 
 <!--end-->
 
-  <div class="icons">
-    <i class="fas fa-search" id="search-btn"></i>
-    <button id="login-btn"><span>Login</span></button>
-  </div>
 
-</header>
 
 
       <!----------------------------------------------------------------------------------------------------------------->
@@ -153,6 +145,7 @@
       <div class="carousel-caption ">
         <h5>Explore Sri Lanka</h5>
         <p> Your Ultimate Travel Companion</p>
+        <h5>Welcome to Travel Guide</h5>
         <p><a href="image/sl2.jpg" class="btn btn-warning mt-3">Read More</a></p>
       </div>
     </div>
@@ -161,6 +154,9 @@
       <div class="carousel-caption">
         <h5>Sri Lanka Escapes</h5>
         <p>Discover, Wander, Thrive</p>
+
+        <h5>Explore the Best Destinations in <br>Sri Lanka</h5>
+       
         <p><a href="image/sl1.jpg" class="btn btn-warning mt-3">Read More</a></p>
       </div>
     </div>
@@ -169,6 +165,8 @@
       <div class="carousel-caption">
         <h5> Sri Lanka Unveiled</h5>
         <p> Your Passport to Paradise</p>
+
+        <h5>Discover the Enchanting Beaches of Sri Lanka</h5>
         <p><a href="image/sl3.jpg" class="btn btn-warning mt-3">Read More</a></p>
       </div>
     </div>
@@ -197,7 +195,7 @@
             <p class="card-text">"Discover Kandy, Sri Lanka - a city of ancient heritage and natural beauty. Visit the sacred Temple of the Tooth Relic and immerse yourself in vibrant festivals amidst lush hills. Explore the heart of Sri Lanka's cultural essence in Kandy."</p>
           </div>
           <div class="card-footer">
-            <small class="text-body-secondary"><a href="#" class="btn btn-primary">Find Out More</a></small>
+            <small class="text-body-secondary"><a href="/Frontend/Home_page/Kandy.html" class="btn btn-primary">Find Out More</a></small>
           </div>
         </div>
       </div>
@@ -211,7 +209,7 @@
             <p class="card-text">"Galle: A historic gem on Sri Lanka's southwestern coast. Explore the iconic Galle Fort, relax on pristine beaches, and immerse yourself in the vibrant culture of this charming city."</p>
           </div>
           <div class="card-footer">
-              <small class="text-body-secondary"><a href="#" class="btn btn-primary">Find Out More</a></small>
+              <small class="text-body-secondary"><a href="/Frontend/Home_page/Galle.html" class="btn btn-primary">Find Out More</a></small>
           </div>
         </div>
       </div>
@@ -224,7 +222,7 @@
               <p class="card-text">"Sigiriya: Discover the ancient marvel of Sri Lanka's Lion Rock. Climb to the top for breathtaking views, explore ancient frescoes, and delve into the fascinating history of this UNESCO World Heritage Site."</p>
             </div>
             <div class="card-footer">
-                <small class="text-body-secondary"><a href="#" class="btn btn-primary">Find Out More</a></small>
+                <small class="text-body-secondary"><a href="/Frontend/Home_page/sigiriya.html" class="btn btn-primary">Find Out More</a></small>
             </div>
           </div>
         </div>
@@ -243,7 +241,7 @@
             <p class="card-text">"Nuwara Eliya: Sri Lanka's picturesque hill station, known for its cool climate, lush tea plantations, and stunning landscapes. Discover colonial charm, scenic train rides, and outdoor adventures in this enchanting destination."</p>
           </div>
           <div class="card-footer">
-            <small class="text-body-secondary"><a href="#" class="btn btn-primary">Find Out More</a></small>
+            <small class="text-body-secondary"><a href="/Frontend/Home_page/nuwaraeliya.html" class="btn btn-primary">Find Out More</a></small>
           </div>
         </div>
       </div>
@@ -257,7 +255,7 @@
               <p class="card-text">"Yala National Park: Home to diverse wildlife and captivating landscapes. Embark on a safari adventure through this renowned sanctuary to encounter majestic elephants, elusive leopards, and a wealth of bird species."</p>
             </div>
             <div class="card-footer">
-                <small class="text-body-secondary"><a href="#" class="btn btn-primary">Find Out More</a></small>
+                <small class="text-body-secondary"><a href="/Frontend/Home_page/yala.html" class="btn btn-primary">Find Out More</a></small>
             </div>
           </div>
         </div>
@@ -265,13 +263,13 @@
 
       <div class="col">
         <div class="card h-100">
-          <img src="image/nuwara eliaya.jpg" class="card-img-top" alt="...">
+          <img src="/Frontend/Home_page/image/sri-pada1.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title text-uppercase">Adam's Peek</h5>
             <p class="card-text">"Adam's Peak: An iconic pilgrimage site in Sri Lanka. Ascend to the summit for breathtaking views and spiritual significance."</p>
           </div>
           <div class="card-footer">
-              <small class="text-body-secondary"><a href="#" class="btn btn-primary">Find Out More</a></small>
+              <small class="text-body-secondary"><a href="/Frontend/Home_page/nuwaraeliya.html" class="btn btn-primary">Find Out More</a></small>
           </div>
         </div>
       </div>
@@ -289,7 +287,7 @@
         <p class="card-text">"Colombo: The bustling capital city of Sri Lanka. Discover a vibrant fusion of cultures, modern skyscrapers, and historic landmarks amidst the lively streets of this dynamic metropolis."</p>
       </div>
       <div class="card-footer">
-        <small class="text-body-secondary"><a href="#" class="btn btn-primary">Find Out More</a></small>
+        <small class="text-body-secondary"><a href="/Frontend/Home_page/colombo.html" class="btn btn-primary">Find Out More</a></small>
       </div>
     </div>
   </div>
@@ -303,7 +301,7 @@
           <p class="card-text">"Mirissa: A coastal paradise in Sri Lanka known for its stunning beaches, vibrant sunsets, and laid-back atmosphere. Experience blissful relaxation, exhilarating whale watching, and fresh seafood delights in this tropical haven."</p>
         </div>
         <div class="card-footer">
-            <small class="text-body-secondary"><a href="#" class="btn btn-primary">Find Out More</a></small>
+            <small class="text-body-secondary"><a href="/Frontend/Home_page/mirissa.html" class="btn btn-primary">Find Out More</a></small>
         </div>
       </div>
     </div>
@@ -317,7 +315,7 @@
         <p class="card-text">"Polonnaruwa: Ancient capital of Sri Lanka, home to UNESCO-listed ruins revealing a rich history of kings and kingdoms. Discover majestic stone sculptures, intricately carved temples, and serene reservoirs amidst lush greenery."</p>
       </div>
       <div class="card-footer">
-          <small class="text-body-secondary"><a href="#" class="btn btn-primary">Read More</a></small>
+          <small class="text-body-secondary"><a href="/Frontend/Home_page/Polonnaruwa.html" class="btn btn-primary">Read More</a></small>
       </div>
     </div>
   </div>
@@ -330,10 +328,15 @@
 <footer class="bg-dark p-2 pt-5 pb-4 text-white" style="width: 100%;">
   <div class="container text-center text-md-left">
       <div class="row text-center text-md-left">
-          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-              <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Travel Guide</h5>
-              <p>"Explore the world with us! Your go-to destination for travel inspiration, tips, and adventures. Welcome to Travel Guide"</p>
-          </div>
+
+            <!--Update Home index.html from this place to-->
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Travel Guide</h5>
+                <p>"Explore the world with us! Your go-to destination for travel inspiration, tips, and adventures. Welcome to Travel Guide"</p>
+                <p style="margin-top: 30px;">Are You a Guider</p>
+                <a href="/Frontend/GuideRegistation/guideRegistration.html" class="btn btn-primary">Register as a Guider</a> <!-- Link to open the form -->
+            </div>
+            <!--This place-->
 
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
               <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Quick Links</h5>
@@ -342,11 +345,11 @@
               </p>
 
               <p>
-                  <a href="#Services" class="text-white" style="text-decoration: none;">Services</a>
+                  <a href="/Frontend/Home_page/" class="text-white" style="text-decoration: none;">Services</a>
               </p>
 
               <p>
-                  <a href="##Hire_Guide" class="text-white" style="text-decoration: none;">Hire Guide</a>
+                  <a href="/Frontend/Guides page/Guider.html" class="text-white" style="text-decoration: none;">Hire Guide</a>
               </p>
 
               <p>
@@ -477,6 +480,17 @@
             document.querySelector('.navbar').style.display = 'flex';
         });
   </script>
+
+<script>
+  document.getElementById('logout-btn').addEventListener('click', function() {
+      // Clear the login state
+      localStorage.removeItem('isLoggedIn');
+      // Open the specified page in a new tab
+      window.open('indexFront.html', '_blank');
+      // Close the current tab
+      window.close();
+  });
+</script>
 
 </body>
 </html>

@@ -24,7 +24,10 @@ document.addEventListener('DOMContentLoaded', function () {
             alert(data.message);
             // Redirect to a success page or show a success message
             setTimeout(() => {
-                window.location.href = 'Sample.html';
+                window.open('index.html', '_blank');
+
+                // Close the current window
+                window.close();
             }, 2000); // 2000 milliseconds = 2 seconds
         })
         .catch(err => console.error(err));

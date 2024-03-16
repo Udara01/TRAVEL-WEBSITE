@@ -51,13 +51,22 @@ document.addEventListener('DOMContentLoaded', function () {
         .then(data => {
             console.log(data);
             if (data.message === 'Login successful') {
-                // Redirect to a success page or show a success message
-                window.location.href = 'Sample.html';
+                // Set a flag in localStorage to indicate the user is logged in
+                localStorage.setItem('isLoggedIn', 'true');
+
+                // Redirect to a success page
+                window.open('index.html', '_blank');
+
+                // Close the current window
+                window.close();
             } else {
                 // Show an error message
                 alert('Invalid username or password');
             }
         })
-        .catch(err => console.error(err));
+        .catch(err => {
+            console.error(err);
+            alert('Invalid username or password');
+        });
     };
 });
